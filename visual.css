@@ -1615,6 +1615,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 
 .zc-widget-page-header {
     display: flex;
+    flex-direction: row;
     padding: 8px 0;
 }
 
@@ -1622,10 +1623,9 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     border-top: 1px solid #EBEBEB;
 }
 
-.zc-widget-section {}
-
 .zc-widget-logo-block {
     display: flex;
+    flex-direction: row;
     padding: 12px 0;
 }
 
@@ -1706,4 +1706,25 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     padding: 5px 12px;
     text-decoration: none;
     text-transform: capitalize;
+}
+
+@media only screen and (max-width: 576px) {
+    .zc-widget-page-header {
+        flex-direction: column;
+    }
+    .zc-pb-8px {
+        padding-bottom: 8px;
+    }
+    .zc-widget-body-wrapper::after {
+        top: 84px
+    }
+    .zc-widget-logo-right-border {
+        border: none;
+    }
+    .zc-widget-logo-block {
+        flex-direction: column;
+    }
+    .zc-widget-center {
+        align-self: flex-start;
+    }
 }
