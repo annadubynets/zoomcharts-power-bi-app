@@ -1613,6 +1613,10 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 
 /* Widget page css */
 
+.zc-widget-page {
+    overflow: scroll;
+}
+
 .zc-widget-page-header {
     display: flex;
     flex-direction: row;
@@ -1641,25 +1645,25 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 .zc-widget-body-wrapper {
     background: #F4F4F4;
     position: relative;
-    height: calc(100% - 46px);
-}
-
-.zc-widget-body-wrapper::after {
-    position: absolute;
-    top: 47px;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid #EBEBEB;
-    content: "";
+    height: calc(100vh - 46px);
 }
 
 .zc-widget-container {
-    width: 258px;
-    margin: auto;
+    max-width: 258px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.zc-border-bottom {
+    border-top: 1px solid #EBEBEB;
 }
 
 .zc-d-flex {
     display: flex;
+}
+
+.zc-w-100 {
+    width: 100%;
 }
 
 .zc-flex-column {
@@ -1685,6 +1689,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     letter-spacing: 0.01em;
     color: #646464;
     padding-bottom: 4px;
+    white-space: nowrap;
 }
 
 .zc-widget-text {
@@ -1693,6 +1698,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     line-height: 12px;
     letter-spacing: 0.01em;
     color: #646464;
+    white-space: nowrap;
 }
 
 .zc-btn-pbi-more-info {
@@ -1706,17 +1712,15 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     padding: 5px 12px;
     text-decoration: none;
     text-transform: capitalize;
+    white-space: nowrap;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 270px) {
     .zc-widget-page-header {
         flex-direction: column;
     }
     .zc-pb-8px {
         padding-bottom: 8px;
-    }
-    .zc-widget-body-wrapper::after {
-        top: 84px
     }
     .zc-widget-logo-right-border {
         border: none;
@@ -1726,5 +1730,11 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     }
     .zc-widget-center {
         align-self: flex-start;
+    }
+    .zc-widget-body-wrapper {
+        height: calc(100vh - 70px);
+    }
+    .zc-widget-container {
+        padding: 0 12px;
     }
 }
