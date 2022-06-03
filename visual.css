@@ -1726,8 +1726,8 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     padding-top: 10px;
 }
 
-.zc-mb-8px {
-    margin-bottom: 8px;
+.zc-mb-6px {
+    margin-bottom: 6px;
 }
 
 .zc-pb-10px {
@@ -1791,17 +1791,18 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     font-size: 10px;
     letter-spacing: 0.01em;
     color: #FFFFFF!important;
-    padding: 6px 10px;
+    padding: 4px 10px;
     text-decoration: none;
     text-transform: initial;
     white-space: nowrap;
+    min-height: 25px;
 }
 
 .zc-btn-pbi-outline-primary {
     background-color: #FFFFFF;
     border: 1px solid #3792FF;
     border-radius: 3px;
-    padding: 6px 37px;
+    padding: 5px 37px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -1809,6 +1810,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     line-height: 12px;
     letter-spacing: 0.01em;
     color: #3792FF;
+    min-height: 25px;
 }
 
 
@@ -1865,7 +1867,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     transform: translate(-50%, -50%); */
     top: 0;
     right: 0;
-    padding: 10px;
+    padding: 8px 10px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
