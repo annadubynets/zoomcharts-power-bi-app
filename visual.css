@@ -1968,6 +1968,9 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     .zc-pb-8px {
         padding-bottom: 8px;
     }
+    .zc-pe-12px {
+        padding-right: 0;
+    }
     .zc-widget-logo-right-border {
         border: none;
     }
