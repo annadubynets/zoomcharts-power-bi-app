@@ -1991,7 +1991,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     border-radius: 2px;
     padding: 2px;
     color: #FFFFFF;
-    border: 1px solid transparent;
+    border: 1px solid white;
 }
 
 .zc-modal-window .zc-modal-close:hover {
