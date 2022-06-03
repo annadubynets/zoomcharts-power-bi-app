@@ -1919,6 +1919,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     letter-spacing: 0.01em;
     color: #000000;
     margin-bottom: 4px;
+    white-space: nowrap;
 }
 
 .zc-modal-window .link {
@@ -1929,6 +1930,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     letter-spacing: 0.01em;
     color: #646464!important;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .zc-modal-window .zc-modal-trial-link {
@@ -1941,6 +1943,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     letter-spacing: 0.01em;
     text-decoration-line: underline;
     color: #3792FF;
+    white-space: nowrap;
 }
 
 .zc-modal-window .zc-modal-trial-link:hover {
@@ -1955,10 +1958,11 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     line-height: 14px;
     letter-spacing: 0.01em;
     color: #646464;
+    white-space: nowrap;
 }
 
 .zc-modal-window .zc-modal-block {
-    display: flex;
+    display: inline-flex;
     background: #F3F2F1;
     border-radius: 5px;
     padding: 7px 10px;
@@ -1984,6 +1988,16 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     color: #1E9CFF;
 }
 
+.zc-modal-window .zc-btn-block {
+    display: flex;
+    justify-content: end;
+}
+
+.zc-modal-window .zc-select-box {
+    display: flex;
+    justify-content: space-between;
+}
+
 .zc-modal-window[theme="dark"] {
     color: white;
 }
@@ -2000,10 +2014,16 @@ around it, because on Power BI Online service and Power BI Desktop by default:
         padding-bottom: 5px;
     }
     .zc-pb-8px {
-        padding-bottom: 8px;
+        padding-bottom: 4px;
+    }
+    .zc-mb-10px {
+        margin-bottom: 10px;
     }
     .zc-pe-12px {
         padding-right: 0;
+    }
+    .zc-w-149px {
+        width: 100%;
     }
     .zc-widget-logo-right-border {
         border: none;
@@ -2025,5 +2045,12 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     }
     .zc-banner {
         display: block;
+    }
+    .zc-modal-window .zc-select-box {
+        display: block;
+    }
+    .zc-modal-window .zc-btn-block {
+        display: block;
+        justify-content: center;
     }
 }
