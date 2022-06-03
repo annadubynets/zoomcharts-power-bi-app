@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget page</title>
+    <link rel="stylesheet" type="text/css" href="visual.css" />
+</head>
+
+<body>
+    <div class="zc-landing-page-wrapper zc-font-book zc-info-license-edit zc-landing-page-equal" style="transform: scale3d(1, 1, 1); transform-origin: left top; top: 0px; left: 0px; width: 100%; max-width: 1024px; height: 100%; z-index: 15000;">
+        <div class="zc-widget-page">
+            <div class="zc-widget-container">
+                <div class="zc-widget-logo-block">
+                    <a href="#" class="zc-pb-8px">
+                        <img src="images/zoomcharts-logo.svg" alt="zoomcharts logo">
+                    </a>
+                    <div class="zc-widget-logo-right-border"></div>
+                    <a href="#" class="zc-widget-center">
+                        <img src="images/drill-down-visuals-logo.svg" alt="drill down visuals logo">
+                    </a>
+                </div>
+            </div>
+            <div class="zc-widget-border"></div>
+            <div class="zc-widget-body-wrapper zc-d-flex zc-flex-column">
+                <div class="zc-widget-container zc-d-flex zc-flex-column">
+                    <div class="zc-widget-page-header">
+                        <div class="zc-widget-right zc-pb-8px">
+                            <div class="zc-widget-title">Drill Down Timeline PRO</div>
+                            <div class="zc-widget-text">V1.9.2 (May, 2022)</div>
+                        </div>
+                        <div>
+                            <a href="#" class="zc-btn-pbi-more-info">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="zc-border-bottom"></div>
+                <div class="zc-widget-container zc-d-flex zc-flex-column zx-m-auto">
+                    <div class="zc-widget-section">
+                        <div>
+                            <button data-zc-toggle="modal" data-zc-target="modal1">1</button>
+                            <button data-zc-toggle="modal" data-zc-target="modal2">2</button>
+                            <button data-zc-toggle="modal" data-zc-target="modal3">3</button>
+                            <button data-zc-toggle="modal" data-zc-target="modal4">4</button>
+                        </div>
+
+                        <div>
+                            <button data-zc-toggle="modal" data-zc-target="modal1" data-zc-modal-theme="dark">1</button>
+                            <button data-zc-toggle="modal" data-zc-target="modal2" data-zc-modal-theme="dark">2</button>
+                            <button data-zc-toggle="modal" data-zc-target="modal3" data-zc-modal-theme="dark">3</button>
+                            <button data-zc-toggle="modal" data-zc-target="modal4" data-zc-modal-theme="dark">4</button>
+                        </div>
+
+                        <img src="images/graphic-img.svg" alt="Graphic" class="zc-w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="modal1" class="zc-modal-window">
+            <div>
+              <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
+              <h1>Modal 1</h1>
+              <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+            </div>
+        </div>
+
+        <div id="modal2" class="zc-modal-window">
+            <div>
+              <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
+              <h1>Modal 2</h1>
+              <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+            </div>
+        </div>
+
+        <div id="modal3" class="zc-modal-window">
+            <div>
+              <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
+              <h1>Modal 3</h1>
+              <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+            </div>
+        </div>
+
+        <div id="modal4" class="zc-modal-window">
+            <div>
+              <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
+              <h1>Modal 4</h1>
+              <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+        let elements = document.querySelectorAll('[data-zc-toggle=modal]');
+        elements.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                let target = btn.dataset.zcTarget || btn.closest('.zc-modal-window').id;
+                
+                if (target) {
+                    toggleWindowShow(target, btn.dataset.zcModalTheme);
+                }
+            })
+        });
+
+        function toggleWindowShow(windowId, theme) {
+            let modalWindow = document.getElementById(windowId);
+            if (modalWindow) {
+                dismissAllModals();
+
+                modalWindow.classList.toggle('show');
+                modalWindow.setAttribute('theme', theme || '');
+            }
+        }
+
+        function dismissAllModals(except) {
+            let modals = document.querySelectorAll('.zc-modal-window');
+            modals.forEach(function(modal) {
+                if (except && modal.id != except.id) {
+                    modal.classList.remove('show');
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

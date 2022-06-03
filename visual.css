@@ -1716,6 +1716,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 }
 
 /* banner */
+
 .zc-banner {
     position: absolute;
     display: flex;
@@ -1728,6 +1729,71 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     border-radius: 3px;
     padding: 10px;
     z-index: 1;
+}
+
+/* Modal windows */
+.zc-modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    font-size: 12px;
+}
+
+.zc-modal-window.show {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.zc-modal-window > div {
+    width: 100%;
+    max-width: 280px;
+    max-height: 280px;
+    overflow-y: scroll;
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    top: 0;
+    right: 0;
+    padding: 2em;
+    background: white;
+}
+
+.zc-modal-window  header {
+    font-weight: bold;
+}
+  
+.zc-modal-window .zc-modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.zc-modal-window .zc-modal-close:hover {
+    color: black;
+}
+
+.zc-modal-window[theme="dark"] {
+    color: white;
+}
+
+.zc-modal-window[theme="dark"] > div {
+    background-color: black;
 }
 
 @media only screen and (max-width: 270px) {
