@@ -1746,8 +1746,16 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     padding-bottom: 0;
 }
 
+.zc-p-0 {
+    padding: 0;
+}
+
 .zc-widget-right {
     padding-right: 39px;
+}
+
+.zc-w-149px {
+    width: 149px;
 }
 
 .zc-widget-title {
@@ -1796,7 +1804,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     font-family: 'Roboto';
     background: linear-gradient(270deg, #C455FE 0%, #1E9CFF 100%);
     border-radius: 3px;
-    border: none;
+    border: 1px solid #FFFFFF;
     font-weight: 400;
     font-size: 10px;
     letter-spacing: 0.01em;
@@ -1818,7 +1826,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     background-color: #FFFFFF;
     border: 1px solid #3792FF;
     border-radius: 3px;
-    padding: 5px 37px;
+    padding: 5px 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -1827,6 +1835,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     letter-spacing: 0.01em;
     color: #3792FF;
     min-height: 25px;
+    text-transform: initial;
 }
 
 .zc-btn-pbi-outline-primary:hover {
