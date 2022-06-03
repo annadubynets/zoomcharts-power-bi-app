@@ -1786,6 +1786,12 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     white-space: nowrap;
 }
 
+.zc-btn-pbi-more-info:hover {
+    border: 1px solid #1E9CFF;
+    background: hsl(0, 0%, 100%)!important;
+    color: #1E9CFF!important;
+}
+
 .zc-btn-pbi-accept {
     font-family: 'Roboto';
     background: linear-gradient(270deg, #C455FE 0%, #1E9CFF 100%);
@@ -1804,7 +1810,6 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 
 .zc-btn-pbi-accept:hover {
     border: 1px solid #1E9CFF;
-    border-radius: 2px;
     background: hsl(0, 0%, 100%)!important;
     color: #1E9CFF!important;
 }
