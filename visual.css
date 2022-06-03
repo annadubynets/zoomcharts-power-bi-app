@@ -1863,6 +1863,18 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     z-index: 1;
 }
 
+.zc-banner[theme="dark"] {
+    background: black;
+}
+
+[theme="dark"] .zc-widget-text {
+    color: white;
+}
+
+[theme="dark"] .zc-widget-border {
+    border-top: 1px solid #5B5A59;
+}
+
 
 /* Modal windows */
 
@@ -1977,7 +1989,9 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     text-decoration: none;
     background: linear-gradient(221.63deg, #C455FE -6.62%, #08A1E3 100%);
     border-radius: 2px;
-    padding: 3px;
+    padding: 2px;
+    color: #FFFFFF;
+    border: 1px solid transparent;
 }
 
 .zc-modal-window .zc-modal-close:hover {
