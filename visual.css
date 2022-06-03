@@ -85,6 +85,10 @@ img.action-btn {
 
 /* Info Window Content */
 
+.zc-margin-top4 {
+    margin-top: 4px !important;
+}
+
 .zc-margin-top5 {
     margin-top: 5px !important;
 }
@@ -1662,8 +1666,20 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     display: flex;
 }
 
+.zc-justify-content-end {
+    justify-content: end;
+}
+
+.zc-justify-content-between {
+    justify-content: space-between;
+}
+
 .zc-w-100 {
     width: 100%;
+}
+
+.zc-flex-row {
+    flex-direction: row;
 }
 
 .zc-flex-column {
@@ -1678,11 +1694,60 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     margin: auto;
 }
 
+.zc-fw-500 {
+    font-weight: 500!important;
+}
+
+.zc-me-10px {
+    margin-right: 10px;
+}
+
+.zc-pe-12px {
+    padding-right: 12px;
+}
+
+.zc-pe-9px {
+    padding-right: 9px;
+}
+
+.zc-pe-3px {
+    padding-right: 3px;
+}
+
+.zc-ps-9px {
+    padding-left: 9px;
+}
+
+.zc-align-middle {
+    vertical-align: middle;
+}
+
+.zc-pt-10px {
+    padding-top: 10px;
+}
+
+.zc-mb-8px {
+    margin-bottom: 8px;
+}
+
+.zc-pb-10px {
+    padding-bottom: 10px;
+}
+
+.zc-display-grid {
+    display: grid;
+}
+
+.zc-pb-0 {
+    padding-bottom: 0;
+}
+
 .zc-widget-right {
     padding-right: 39px;
 }
 
 .zc-widget-title {
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -1693,6 +1758,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 }
 
 .zc-widget-text {
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
@@ -1702,6 +1768,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 }
 
 .zc-btn-pbi-more-info {
+    font-family: 'Roboto';
     background: #FFFFFF;
     border: 1px solid #DFDFDF;
     border-radius: 3px;
@@ -1715,23 +1782,57 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     white-space: nowrap;
 }
 
+.zc-btn-pbi-accept {
+    font-family: 'Roboto';
+    background: linear-gradient(270deg, #C455FE 0%, #1E9CFF 100%);
+    border-radius: 3px;
+    border: none;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF!important;
+    padding: 6px 10px;
+    text-decoration: none;
+    text-transform: initial;
+    white-space: nowrap;
+}
+
+.zc-btn-pbi-outline-primary {
+    background-color: #FFFFFF;
+    border: 1px solid #3792FF;
+    border-radius: 3px;
+    padding: 6px 37px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.01em;
+    color: #3792FF;
+}
+
+
 /* banner */
 
 .zc-banner {
     position: absolute;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     max-width: 100%;
     right: 0;
     top: 0;
     font-size: 10px;
-    background: #D9D9D9;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
-    padding: 10px;
+    padding: 10px 15px;
     z-index: 1;
 }
 
+
 /* Modal windows */
+
 .zc-modal-window {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.25);
@@ -1753,7 +1854,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     pointer-events: auto;
 }
 
-.zc-modal-window > div {
+.zc-modal-window>div {
     width: 100%;
     max-width: 280px;
     max-height: 280px;
@@ -1764,24 +1865,78 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     transform: translate(-50%, -50%); */
     top: 0;
     right: 0;
-    padding: 2em;
-    background: white;
+    padding: 10px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
 }
 
-.zc-modal-window  header {
+.zc-modal-window header {
     font-weight: bold;
 }
-  
-.zc-modal-window .zc-modal-close {
-    color: #aaa;
-    line-height: 50px;
-    font-size: 80%;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 70px;
+
+.zc-modal-window .title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.zc-modal-window .link {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #646464!important;
     text-decoration: none;
+}
+
+.zc-modal-window .zc-modal-trial-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
+    color: #3792FF;
+}
+
+.zc-modal-window .zc-modal-details-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #646464;
+}
+
+.zc-modal-window .zc-modal-block {
+    display: flex;
+    background: #F3F2F1;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+.zc-modal-window .zc-modal-close {
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    background: linear-gradient(221.63deg, #C455FE -6.62%, #08A1E3 100%);
+    border-radius: 2px;
+    padding: 3px;
 }
 
 .zc-modal-window .zc-modal-close:hover {
@@ -1792,13 +1947,16 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     color: white;
 }
 
-.zc-modal-window[theme="dark"] > div {
+.zc-modal-window[theme="dark"]>div {
     background-color: black;
 }
 
 @media only screen and (max-width: 270px) {
     .zc-widget-page-header {
         flex-direction: column;
+    }
+    .zc-pb-5px {
+        padding-bottom: 5px;
     }
     .zc-pb-8px {
         padding-bottom: 8px;
@@ -1817,5 +1975,11 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     }
     .zc-widget-container {
         padding: 0 12px;
+    }
+    .zc-widget-pe-12px {
+        padding-right: 0;
+    }
+    .zc-banner {
+        display: block;
     }
 }

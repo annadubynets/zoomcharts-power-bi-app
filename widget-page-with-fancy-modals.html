@@ -62,46 +62,100 @@
 
         <div id="modal1" class="zc-modal-window">
             <div>
-              <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
-              <h1>Modal 1</h1>
-              <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+                <div class="zc-d-flex zc-mb-8px">
+                    <div class="zc-d-flex zc-flex-row">
+                        <a href="#" class="zc-pb-8px">
+                            <img src="images/zoomcharts-logo.svg" alt="zoomcharts logo">
+                        </a>
+                        <div class="zc-widget-logo-right-border"></div>
+                        <a href="#" class="zc-widget-center">
+                            <img src="images/drill-down-visuals-logo.svg" alt="drill down visuals logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">
+                            <img src="images/close.svg" alt="Close">
+                        </a>
+                    </div>
+                </div>
+                <div class="zc-border-bottom"></div>
+
+                <h1 class="title zc-pt-10px">Drill Down Timeline PRO</h1>
+                <div class="zc-widget-text zc-pb-10px">V1.9.2 (May, 2022)</div>
+                <div class="zc-border-bottom"></div>
+
+                <div class="zc-pb-10px zc-pt-10px">
+                    <a href="#" class="link">Need help?</a>
+                </div>
+                <div class="zc-display-grid zc-pb-10px">
+                    <button class="zc-btn-pbi-accept">
+                        <span class="zc-widget-pe-9px zc-align-middle"><img src="images/chat.svg" alt="Chat"></span>
+                        Chat with ZoomCharts Team</button>
+                </div>
+
+                <div class="zc-border-bottom"></div>
+
+                <p class="zc-modal-details-link zc-pb-10px zc-pt-10px">License details:</p>
+                <div class="zc-d-flex zc-justify-content-between zc-pb-10px">
+                    <div class="zc-modal-block zc-me-10px">
+                        <img src="images/pbi-desktop.svg" alt="PBI Desktop">
+                        <div class="zc-ps-9px">
+                            <p class="zc-widget-text zc-fw-500 zc-pb-0">PBI Desktop</p>
+                            <p class="zc-widget-text">Free for Dev</p>
+                        </div>
+                    </div>
+
+                    <div class="zc-modal-block">
+                        <img src="images/publish-web.svg" alt="Publish Web">
+                        <div class="zc-ps-9px">
+                            <p class="zc-widget-text zc-fw-500 zc-pb-0">Publish to Web</p>
+                            <div class="zc-d-flex">
+                                <p class="zc-widget-text zc-pe-3px">30d left</p>
+                                <a href="#" class="zc-modal-trial-link">Extend Trial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zc-d-flex zc-justify-content-end">
+                    <button class="zc-btn-pbi-outline-primary">
+                        Request a Quote</button>
+                </div>
             </div>
         </div>
 
         <div id="modal2" class="zc-modal-window">
             <div>
-              <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
-              <h1>Modal 2</h1>
-              <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+                <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
+                <h1>Modal 2</h1>
+                <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
             </div>
         </div>
 
         <div id="modal3" class="zc-modal-window">
             <div>
-              <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
-              <h1>Modal 3</h1>
-              <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+                <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
+                <h1>Modal 3</h1>
+                <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
             </div>
         </div>
 
         <div id="modal4" class="zc-modal-window">
             <div>
-              <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
-              <h1>Modal 4</h1>
-              <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
+                <a href="#" title="Close" class="zc-modal-close" data-zc-toggle="modal">Close</a>
+                <h1>Modal 4</h1>
+                <div>A CSS-only modal based on the :target pseudo-class. Hope you find it helpful.</div>
             </div>
         </div>
     </div>
 
     <script>
-
-
         let elements = document.querySelectorAll('[data-zc-toggle=modal]');
         elements.forEach(function(btn) {
             btn.addEventListener('click', function(e) {
                 e.preventDefault();
                 let target = btn.dataset.zcTarget || btn.closest('.zc-modal-window').id;
-                
+
                 if (target) {
                     toggleWindowShow(target, btn.dataset.zcModalTheme);
                 }
