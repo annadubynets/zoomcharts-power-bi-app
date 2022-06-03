@@ -1659,7 +1659,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 }
 
 .zc-border-bottom {
-    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
 }
 
 .zc-d-flex {
@@ -1899,7 +1899,6 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     top: 0;
     right: 0;
     padding-top: 8px;
-    padding-bottom: 8px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1998,12 +1997,48 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     justify-content: space-between;
 }
 
+.zc-modal-window .zc-modal-body {
+    padding-bottom: 8px;
+}
+
 .zc-modal-window[theme="dark"] {
     color: white;
 }
 
 .zc-modal-window[theme="dark"]>div {
+    border: none;
+}
+
+.zc-modal-window[theme="dark"] .zc-modal-body {
     background-color: black;
+}
+
+.zc-modal-window[theme="dark"] .zc-border-bottom {
+    border-bottom: 1px solid #424140!important;
+}
+
+.zc-modal-window[theme="dark"] .title {
+    color: white;
+}
+
+.zc-modal-window[theme="dark"] .zc-widget-text {
+    color: white;
+}
+
+.zc-modal-window[theme="dark"] .link {
+    color: white!important;
+}
+
+.zc-modal-window[theme="dark"] .zc-modal-details-link {
+    color: white;
+}
+
+[theme="dark"] .zc-btn-pbi-accept {
+    border: 1px solid #000000;
+}
+
+.zc-modal-window[theme="dark"] .zc-modal-block {
+    background: #474645;
 }
 
 @media only screen and (max-width: 270px) {
