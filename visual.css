@@ -1802,6 +1802,13 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     min-height: 25px;
 }
 
+.zc-btn-pbi-accept:hover {
+    border: 1px solid #1E9CFF;
+    border-radius: 2px;
+    background: hsl(0, 0%, 100%)!important;
+    color: #1E9CFF!important;
+}
+
 .zc-btn-pbi-outline-primary {
     background-color: #FFFFFF;
     border: 1px solid #3792FF;
@@ -1815,6 +1822,12 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     letter-spacing: 0.01em;
     color: #3792FF;
     min-height: 25px;
+}
+
+.zc-btn-pbi-outline-primary:hover {
+    background: linear-gradient(268.39deg, #C455FE 0%, #1E9CFF 100%);
+    color: #FFFFFF!important;
+    border: none;
 }
 
 
@@ -1916,6 +1929,10 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     color: #3792FF;
 }
 
+.zc-modal-window .zc-modal-trial-link:hover {
+    color: #5979FF;
+}
+
 .zc-modal-window .zc-modal-details-link {
     font-family: 'Roboto';
     font-style: normal;
@@ -1947,7 +1964,10 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 }
 
 .zc-modal-window .zc-modal-close:hover {
-    color: black;
+    border: 1px solid #1E9CFF;
+    border-radius: 2px;
+    background: #FFFFFF!important;
+    color: #1E9CFF;
 }
 
 .zc-modal-window[theme="dark"] {
