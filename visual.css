@@ -1698,6 +1698,10 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     font-weight: 500!important;
 }
 
+.zc-fw-600 {
+    font-weight: 600!important;
+}
+
 .zc-px-10px {
     padding: 0 10px;
 }
@@ -1730,6 +1734,10 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     padding-top: 10px;
 }
 
+.zc-pt-15px {
+    padding-top: 15px;
+}
+
 .zc-mb-6px {
     margin-bottom: 6px;
 }
@@ -1740,6 +1748,14 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 
 .zc-display-grid {
     display: grid;
+}
+
+.zc-d-block {
+    display: block;
+}
+
+.zc-align-center {
+    text-align: center;
 }
 
 .zc-pb-0 {
@@ -1756,6 +1772,14 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 
 .zc-w-149px {
     width: 149px;
+}
+
+.text-warning {
+    color: #FF8000!important;
+}
+
+.text-danger {
+    color: #FF0000!important;
 }
 
 .zc-widget-title {
@@ -1977,6 +2001,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     background: #F3F2F1;
     border-radius: 5px;
     padding: 7px 10px;
+    position: relative;
 }
 
 .zc-modal-window .zc-modal-close {
@@ -2013,6 +2038,12 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 
 .zc-modal-window .zc-modal-body {
     padding-bottom: 8px;
+}
+
+.zc-modal-window .zc-warning-block {
+    position: absolute;
+    top: -4px;
+    right: 3px;
 }
 
 .zc-modal-window[theme="dark"] {
