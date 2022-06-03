@@ -1863,6 +1863,18 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     z-index: 1;
 }
 
+.zc-banner[theme="dark"] {
+    background: black;
+}
+
+[theme="dark"] .zc-widget-text {
+    color: white;
+}
+
+[theme="dark"] .zc-widget-border {
+    border-top: 1px solid #5B5A59;
+}
+
 
 /* Modal windows */
 
