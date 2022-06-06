@@ -1892,7 +1892,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 }
 
 .zc-banner[theme="dark"] {
-    background: black;
+    background: #323130;
 }
 
 [theme="dark"] .zc-widget-text {
@@ -2083,7 +2083,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 }
 
 [theme="dark"] .zc-btn-pbi-accept {
-    border: 1px solid #000000;
+    border: 1px solid #323130;
 }
 
 .zc-modal-window[theme="dark"] .zc-modal-block {
