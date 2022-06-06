@@ -1730,6 +1730,10 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     vertical-align: middle;
 }
 
+.zc-pt-9px {
+    padding-top: 9px;
+}
+
 .zc-pt-10px {
     padding-top: 10px;
 }
@@ -2055,7 +2059,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 }
 
 .zc-modal-window[theme="dark"] .zc-modal-body {
-    background-color: black;
+    background-color: #323130;
 }
 
 .zc-modal-window[theme="dark"] .zc-border-bottom {
