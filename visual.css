@@ -2038,6 +2038,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
 .zc-modal-window .zc-select-box {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .zc-modal-window .zc-modal-body {
