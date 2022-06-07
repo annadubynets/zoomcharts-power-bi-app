@@ -2159,9 +2159,6 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     .zc-widget-page-header {
         flex-direction: column;
     }
-    .zc-pb-5px {
-        padding-bottom: 5px;
-    }
     .zc-pb-3px {
         padding-bottom: 3px;
     }
@@ -2192,9 +2189,6 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     .zc-widget-pe-12px {
         padding-right: 0;
     }
-    .zc-banner {
-        display: block;
-    }
     .zc-modal-window .zc-select-box {
         display: block;
     }
@@ -2204,5 +2198,14 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     }
     .zc-widget-logo-right-border {
         border: none!important;
+    }
+}
+
+@media only screen and (max-width: 304px) {
+    .zc-pb-5px {
+        padding-bottom: 5px;
+    }
+    .zc-banner {
+        display: block;
     }
 }
