@@ -1985,7 +1985,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 14px;
     letter-spacing: 0.01em;
     color: #646464!important;
     text-decoration: none;
@@ -2189,5 +2189,8 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     .zc-modal-window .zc-btn-block {
         display: block;
         justify-content: center;
+    }
+    .zc-widget-logo-right-border {
+        border: none!important;
     }
 }
