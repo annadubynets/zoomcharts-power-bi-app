@@ -1746,6 +1746,10 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     padding-bottom: 8px;
 }
 
+.zc-pb-26px {
+    padding-bottom: 26px;
+}
+
 .zc-pt-8px {
     padding-top: 8px;
 }
@@ -1832,12 +1836,14 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     border-radius: 3px;
     font-weight: 400;
     font-size: 12px;
+    line-height: 17px;
     letter-spacing: 0.01em;
     color: #AFAFAF!important;
     padding: 5px 12px;
     text-decoration: none;
     text-transform: capitalize;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .zc-btn-pbi-more-info:hover {
@@ -1853,7 +1859,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     border: 1px solid #FFFFFF;
     font-weight: 400;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 17px;
     letter-spacing: 0.01em;
     color: #FFFFFF!important;
     padding: 5px 10px;
@@ -1861,11 +1867,12 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     text-transform: initial;
     white-space: nowrap;
     min-height: 25px;
+    cursor: pointer;
 }
 
 .zc-btn-pbi-accept:hover {
-    border: 1px solid #1E9CFF;
-    background: hsl(0, 0%, 100%)!important;
+    border: 1px solid #1E9CFF!important;
+    background: transparent!important;
     color: #1E9CFF!important;
 }
 
@@ -1878,12 +1885,13 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 15px;
     letter-spacing: 0.01em;
     color: #3792FF;
     min-height: 25px;
     text-transform: initial;
     transition: none;
+    cursor: pointer;
 }
 
 .zc-btn-pbi-outline-primary:hover {
@@ -1974,7 +1982,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 13px;
     letter-spacing: 0.01em;
     color: #000000;
     margin-bottom: 4px;
@@ -1985,7 +1993,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 13px;
     letter-spacing: 0.01em;
     color: #646464!important;
     text-decoration: none;
@@ -2014,7 +2022,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 13px;
     letter-spacing: 0.01em;
     color: #646464;
     white-space: nowrap;
@@ -2133,6 +2141,10 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     border: 1px solid #3792FF;
     color: #3792FF;
     background-color: transparent;
+}
+
+[theme="dark"] .zc-btn-pbi-outline-primary:hover {
+    border: 1px solid #323130;
 }
 
 [theme="dark"] .zc-widget-subtext {
