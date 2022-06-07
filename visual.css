@@ -1718,8 +1718,8 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     padding-right: 12px;
 }
 
-.zc-pe-9px {
-    padding-right: 9px;
+.zc-me-9px {
+    margin-right: 9px;
 }
 
 .zc-pe-3px {
@@ -1762,12 +1762,20 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     margin-bottom: 6px;
 }
 
-.zc-display-grid {
+.zc-d-grid {
     display: grid;
 }
 
 .zc-d-block {
     display: block;
+}
+
+.zc-justify-content-center {
+    justify-content: center;
+}
+
+.zc-align-items-center {
+    align-items: center;
 }
 
 .zc-align-center {
