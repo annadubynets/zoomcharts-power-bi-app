@@ -1883,6 +1883,7 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     color: #3792FF;
     min-height: 25px;
     text-transform: initial;
+    transition: none;
 }
 
 .zc-btn-pbi-outline-primary:hover {
