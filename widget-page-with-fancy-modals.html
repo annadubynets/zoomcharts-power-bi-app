@@ -390,46 +390,56 @@
 
                 <div class="zc-modal-body zc-align-center">
                     <div class="zc-px-10px">
-                        <h1 class="title zc-pt-15px zc-pb-4px">Unlock Viewer Mode</h1>
-                        <div class="zc-widget-text zc-fw-400 zc-pb-26px">Contact your <span class="zc-fw-600">Power BI developer</span> to <span class="zc-d-block"><a href="#" class="zc-modal-trial-link">Extend</a> Viewer Mode trial by 30 days or</span><a href="#" class="zc-modal-trial-link">Get license</a>                            and view Published reports.</div>
+                        <h1 class="title zc-pt-15px">Unlock Viewer Mode</h1>
+                        <p class="zc-widget-text zc-fw-400">Contact your <span class="zc-fw-600">Power BI developer</span> to</p>
+                        <div class="zc-viewer-mode-box zc-pt-8px zc-pb-20px">
+                            <div class="zc-modal-block inline zc-widget-center zc-me-7px zc-mb-10px">
+                                <a href="#" class="zc-modal-trial-link">Extend </a>Viewer Mode<br> trial by 30 days
+                            </div>
+                            <div class="zc-modal-block inline">
+                                <a href="#" class="zc-modal-trial-link">Get license, </a>and view<br> Published reports.
+                            </div>
+                            <div class="zc-modal-or-widget">
+                                <span>or</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        let elements = document.querySelectorAll('[data-zc-toggle=modal]');
-        elements.forEach(function(btn) {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                let target = btn.dataset.zcTarget || btn.closest('.zc-modal-window').id;
+        <script>
+            let elements = document.querySelectorAll('[data-zc-toggle=modal]');
+            elements.forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    let target = btn.dataset.zcTarget || btn.closest('.zc-modal-window').id;
 
-                if (target) {
-                    toggleWindowShow(target, btn.dataset.zcModalTheme);
+                    if (target) {
+                        toggleWindowShow(target, btn.dataset.zcModalTheme);
+                    }
+                })
+            });
+
+            function toggleWindowShow(windowId, theme) {
+                let modalWindow = document.getElementById(windowId);
+                if (modalWindow) {
+                    dismissAllModals();
+
+                    modalWindow.classList.toggle('show');
+                    modalWindow.setAttribute('theme', theme || '');
                 }
-            })
-        });
-
-        function toggleWindowShow(windowId, theme) {
-            let modalWindow = document.getElementById(windowId);
-            if (modalWindow) {
-                dismissAllModals();
-
-                modalWindow.classList.toggle('show');
-                modalWindow.setAttribute('theme', theme || '');
             }
-        }
 
-        function dismissAllModals(except) {
-            let modals = document.querySelectorAll('.zc-modal-window');
-            modals.forEach(function(modal) {
-                if (except && modal.id != except.id) {
-                    modal.classList.remove('show');
-                }
-            })
-        }
-    </script>
+            function dismissAllModals(except) {
+                let modals = document.querySelectorAll('.zc-modal-window');
+                modals.forEach(function(modal) {
+                    if (except && modal.id != except.id) {
+                        modal.classList.remove('show');
+                    }
+                })
+            }
+        </script>
 </body>
 
 </html>

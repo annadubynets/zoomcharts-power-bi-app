@@ -1746,6 +1746,10 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     padding-bottom: 8px;
 }
 
+.zc-pb-20px {
+    padding-bottom: 20px;
+}
+
 .zc-pb-26px {
     padding-bottom: 26px;
 }
@@ -2043,6 +2047,11 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     border-radius: 5px;
     padding: 7px 8px;
     position: relative;
+    white-space: nowrap;
+}
+
+.zc-modal-window .zc-modal-block.inline {
+    display: inline;
 }
 
 .zc-modal-window .zc-modal-close {
@@ -2076,6 +2085,14 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
+}
+
+.zc-modal-window .zc-viewer-mode-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
 }
 
 .zc-modal-window .zc-modal-body {
@@ -2086,6 +2103,37 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     position: absolute;
     top: -4px;
     right: 3px;
+}
+
+.zc-modal-window .zc-modal-or-widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #474645;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 21px;
+    left: 120px;
+}
+
+.zc-modal-window .zc-modal-or-widget span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #474645;
 }
 
 .zc-modal-window[theme="dark"] {
@@ -2206,6 +2254,9 @@ around it, because on Power BI Online service and Power BI Desktop by default:
     }
     .zc-widget-logo-right-border {
         border: none!important;
+    }
+    .zc-modal-window .zc-modal-or-widget {
+        left: 117px;
     }
 }
 
